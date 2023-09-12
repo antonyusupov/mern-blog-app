@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/components';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@layer components {
+    .active {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 50%;
+        background-color: rgb(43, 70, 92);
+        z-index: 999;
+        padding: 0 2rem;
+        transition: 200ms ease-in-out;
+    }
+}
